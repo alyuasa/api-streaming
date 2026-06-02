@@ -57,7 +57,7 @@ router.put('/musicas/:id', async (req, res) => {
     }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/deletar-musica/:id', async (req, res) => {
     try {
         const musicaDeletada = await Musica.findByIdAndDelete(req.params.id);
 
